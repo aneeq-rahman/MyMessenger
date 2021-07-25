@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    tools:context=".activity.StatusDisplayActivity">
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recycle_views"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="25dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="60dp"/>
+
+    <TextView
+        android:id="@+id/txtViewed"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:drawableStart="@drawable/ic_eye"
+       android:text="      viewed by"
+        android:textSize="25sp"
+        android:layout_marginLeft="165dp"
+        android:layout_marginTop="620dp"
+        android:layout_below="@id/toolbar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_dark_background">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/cardview_dark_background"
+            app:title="My Status"
+            app:titleTextColor="#ffffff" />
+
+        <ProgressBar
+            android:layout_marginTop="10dp"
+            android:id="@+id/statusBar"
+            android:progressTint="#ffffff"
+            android:secondaryProgressTint="#ffffff"
+            android:indeterminate="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_below="@+id/toolbar"/>
+
+        <ImageView
+            android:id="@+id/imgStatus"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_below="@id/toolbar"
+            android:layout_marginTop="80dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <VideoView
+            android:id="@+id/vidStatus"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_below="@id/toolbar"
+            android:layout_marginTop="80dp"
+             />
+
+        <TextView
+            android:id="@+id/txtCaption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_marginTop="500dp"
+            android:layout_below="@id/toolbar"/>
+
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

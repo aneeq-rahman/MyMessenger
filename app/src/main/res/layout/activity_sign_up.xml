@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00897B"
+    tools:context=".activity.SignUpActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cicProfile"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:id="@+id/btnProfile"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rounded_image"
+        android:text="Select Photo" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/btnProfile"
+        android:layout_margin="20dp"
+        android:background="@drawable/rounded_edittexts"
+        android:hint="   UserName"
+        android:inputType="text"
+        android:maxLength="11"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/etPass"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/etName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rounded_edittexts"
+        android:hint="   Password"
+        android:inputType="textPassword"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/etPass"
+        android:layout_margin="20dp"
+        android:background="@drawable/rounded_edittexts"
+        android:hint="   Email"
+        android:inputType="textEmailAddress"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/etEmail"
+        android:layout_margin="20dp"
+        android:background="@drawable/rounded_button"
+        android:text="SignUp"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

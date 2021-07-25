@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/new_message"
+        android:title="New message"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_newmessage"
+        />
+    <item android:id="@+id/sign_out"
+        android:title="Sign Out"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_signout"
+        />
+    <item android:id="@+id/profile"
+        android:title="My Profile"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/status"
+        android:title="Status"
+        app:showAsAction="never"
+        />
+
+    <item android:id="@+id/txtrecog"
+        android:title="Machine Learning"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/imgediting"
+        android:title="Image"
+        app:showAsAction="never"
+        />
+</menu>

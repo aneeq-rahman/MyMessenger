@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item android:id="@+id/imgEditUndo"
+        android:title="imgEditDraw"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_undo"
+        />
+    <item android:id="@+id/imgEditSticker"
+        android:title="imgEditSticker"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_sticker"
+        />
+    <item android:id="@+id/imgEditText"
+        android:title="imgEditText"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_text2"
+        />
+    <item android:id="@+id/imgEditEmoji"
+        android:title="imgEditEmoji"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_emoji"
+        />
+
+
+</menu>

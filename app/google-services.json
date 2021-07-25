@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "806515974699",
+    "firebase_url": "https://my-messenger-a625d.firebaseio.com",
+    "project_id": "my-messenger-a625d",
+    "storage_bucket": "my-messenger-a625d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806515974699:android:84ae25fb418a606f08006e",
+        "android_client_info": {
+          "package_name": "com.aneeq.messenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "806515974699-65klb0ufgma1c4a5i5c80g2ojgdskohe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLhHVTekj0rPvjZ6dPdK1949rBZZsDy_c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "806515974699-65klb0ufgma1c4a5i5c80g2ojgdskohe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

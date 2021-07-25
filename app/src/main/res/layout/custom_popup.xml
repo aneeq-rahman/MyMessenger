@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:padding="5dp"
+    android:background="#FDD835"
+    android:layout_margin="10dp"
+    android:layout_gravity="bottom">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:weightSum="6"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/imgAttach"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:padding="6dp"
+        android:layout_weight="2"
+        android:layout_margin="4dp"
+        android:background="@drawable/ic_image"
+
+       />
+
+    <ImageButton
+        android:id="@+id/vidAttach"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:padding="6dp"
+        android:layout_weight="2"
+        android:layout_margin="4dp"
+        android:background="@drawable/ic_video"/>
+
+    <ImageButton
+        android:id="@+id/docAttach"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:padding="6dp"
+        android:layout_weight="2"
+        android:layout_margin="4dp"
+        android:background="@drawable/ic_doc"
+
+        />
+
+</LinearLayout>
+
+</RelativeLayout>

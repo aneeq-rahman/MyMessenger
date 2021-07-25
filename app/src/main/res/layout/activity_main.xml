@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D81B60"
+    tools:context=".activity.MainActivity">
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="SELECT IMAGE"
+        android:layout_margin="30dp"
+        />
+
+    <ImageView
+        android:id="@+id/imgml"
+        android:layout_width="240dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="240dp"
+        android:layout_margin="10dp"
+        android:background="@color/colorAccent"
+        android:layout_below="@id/btnSend"/>
+
+    <com.aneeq.messenger.overlay.GraphicOverlay
+        android:id="@+id/graphic_overlay"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:layout_below="@id/btnSend"
+        />
+
+    <Button
+        android:id="@+id/btntxtrecog"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="text recognize"
+        android:layout_marginLeft="240dp"
+        android:textSize="5sp"
+        android:layout_below="@+id/imgml"
+
+        />
+    <Button
+        android:id="@+id/btndetface"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="detect face"
+        android:layout_marginLeft="200dp"
+        android:textSize="5sp"
+        android:layout_below="@+id/imgml"
+
+        />
+    <Button
+        android:id="@+id/btnimglabel"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="img label"
+        android:textSize="5sp"
+       android:layout_marginLeft="300dp"
+        android:layout_below="@+id/imgml"
+        />
+
+    <TextView
+        android:background="#ffffff"
+        android:id="@+id/txtml"
+        android:layout_margin="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgml"/>
+
+
+</RelativeLayout>

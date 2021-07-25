@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#181819"
+    tools:context=".activity.ImageEditorActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+
+    <ImageView
+        android:id="@+id/imgEditor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"/>
+
+
+    <com.ahmedadeltito.photoeditorsdk.BrushDrawingView
+        android:id="@+id/bdwimageEditor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"/>
+
+
+
+
+
+    <EditText
+        android:id="@+id/etCaption"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/cardview_dark_background"
+        android:hint="Type Caption Here...."
+        android:padding="10dp"
+        android:textColorHint="#ffffff" />
+
+    <ImageButton
+        android:id="@+id/btnSend"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="490dp"
+        android:background="@drawable/rounded_image"
+        android:src="@drawable/ic_send" />
+
+    <SeekBar
+        android:id="@+id/skBrush"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:background="#ffffff"
+        android:max="100"
+        android:progress="20"
+        android:thumb="@drawable/ic_eraser"
+        android:thumbTint="@color/colorPrimary" />
+
+    <RadioGroup
+        android:id="@+id/radiog"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="400dp">
+
+        <RadioButton
+            android:id="@+id/btnEraser"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:drawableStart="@drawable/ic_eraser"
+            android:text="Eraser"
+            android:textSize="20sp"
+
+            />
+
+        <RadioButton
+            android:id="@+id/btnBrush"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:drawableStart="@drawable/ic_brush"
+            android:text="Brush"
+            android:textSize="20sp"
+
+            />
+    </RadioGroup>
+
+
+</RelativeLayout>

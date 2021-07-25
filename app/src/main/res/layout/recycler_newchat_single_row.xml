@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:background="#FFFCFC"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:id="@+id/llContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E8FDF9F9"
+        android:padding="2dp"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_newchat"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="2"
+            android:padding="3dp"
+            android:src="@color/colorPrimary"
+            app:civ_border_color="@color/common_google_signin_btn_text_light_pressed"
+            app:civ_border_width="2dp"/>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="4">
+
+            <TextView
+                android:id="@+id/txtNewName"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:gravity="fill"
+                android:padding="2dp"
+                android:text="Misaka"
+                android:textColor="@color/common_google_signin_btn_text_light_pressed"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtNewStatus"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txtNewName"
+                android:text="Hey There! I am Using KFM."
+                android:padding="3dp"
+                android:textColor="@color/common_google_signin_btn_text_light_pressed"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

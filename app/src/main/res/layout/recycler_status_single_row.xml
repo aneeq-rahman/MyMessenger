@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llContent"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:weightSum="6"
+    android:background="#ffffff">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgMyStatus"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:src="@color/colorPrimary"
+            app:civ_border_color="@color/common_google_signin_btn_text_light_pressed"
+            app:civ_border_width="2dp" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="4">
+
+            <TextView
+                android:id="@+id/txtMyStatus"
+                android:layout_width="197dp"
+                android:layout_height="wrap_content"
+                android:gravity="fill"
+                android:padding="2dp"
+                android:text="My Status"
+                android:textColor="@color/common_google_signin_btn_text_light_pressed"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtStatusTime"
+                android:layout_width="197dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txtMyStatus"
+                android:padding="3dp"
+                android:text="Tap to Add Status"
+                android:textColor="@color/common_google_signin_btn_text_light_pressed"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>

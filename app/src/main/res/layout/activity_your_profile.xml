@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/drawerLayout"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".activity.YourProfileActivity">
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.appbar.AppBarLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/colorAccent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1E88E5"
+            >
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/cicProfileLo"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@color/colorAccent"
+                android:layout_centerHorizontal="true"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/common_google_signin_btn_text_light_pressed"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="23dp"/>
+
+            <ImageButton
+                android:id="@+id/btnProfile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignEnd="@+id/cicProfileLo"
+                android:layout_alignBottom="@+id/cicProfileLo"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/rounded_image"
+                android:src="@drawable/ic_camera" />
+
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cicProfileLo"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginLeft="290dp"
+                android:text="Update"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/btnUpdate"
+                android:layout_margin="20dp"
+                android:background="@drawable/rounded_edittexts"
+                android:maxLength="11"
+                android:drawableEnd="@drawable/ic_edit2"
+                android:gravity="center"
+                android:textAlignment="gravity"
+                android:textSize="24sp"
+                />
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:textAlignment="gravity"
+                android:layout_below="@+id/txtName"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/cardview_dark_background"
+                android:background="@drawable/rounded_edittexts"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/txtStatus"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:textAlignment="gravity"
+                android:text="Hey there!I am using KFM"
+                android:textColor="@color/cardview_dark_background"
+                android:layout_below="@+id/txtEmail"
+                android:drawableEnd="@drawable/ic_edit2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="27dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/rounded_edittexts"
+                android:textSize="24sp" />
+
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.drawerlayout.widget.DrawerLayout>
